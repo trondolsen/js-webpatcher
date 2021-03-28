@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="./css/webpatcher.css" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </head>
+<html>
+<body class="noselect">
+  <div class="menu-frame float-start">
+    <div class="float-start">
+      <div type="button" class="applogo btn btn-secondary btn-sm float-start">WebPatcher *IN DEVELOPMENT*</div>
+    </div>
+  
+    <div class="float-start">
+      <div type="button" class="midi-label btn btn-secondary btn-sm float-start">Midi Input</div>
+      <div class="dropdown float-start">
+        <button class="midi-input btn btn-outline-secondary btn-sm dropdown-toggle float-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">None</button>
+        <ul class="midi-input-list dropdown-menu" aria-labelledby="midiInputButton">
+        </ul>
+      </div>
+      <div class="dropdown float-start">
+        <button class="midi-input-channel btn btn-outline-secondary btn-sm dropdown-toggle float-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">None</button>
+        <ul class="midi-input-channel-list dropdown-menu" aria-labelledby="midiInputChannelButton">
+        </ul>
+      </div>
+    </div>
+    <div class="float-start">
+      <div type="button" class="midi-label btn btn-secondary btn-sm float-start">Midi Output</div>
+      <div class="dropdown float-start">
+        <button class="midi-output btn btn-outline-secondary btn-sm dropdown-toggle float-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">None</button>
+        <ul class="midi-output-list dropdown-menu" aria-labelledby="midiOutputButton">
+        </ul>
+      </div>
+      <div class="dropdown float-start">
+        <button class="midi-output-channel btn btn-outline-secondary btn-sm dropdown-toggle float-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">None</button>
+        <ul class="midi-output-channel-list dropdown-menu" aria-labelledby="midiOutputChannelButton">
+        </ul>
+      </div>
+    </div>
+    <div class="float-start">
+      <div type="button" class="midi-label btn btn-secondary btn-sm float-start">Midi Events</div>
+      <button class="midi-events btn btn-outline-secondary btn-sm float-start">Waiting for event</button>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="synth-chassis-frame synth-chassis-black">
+    <div class="synth-section-lfo-frame">
+      <div class="synth-section-lfo">
+        <div class="synth-steprotary-frame synth-lfo1-waveform-frame noselect"><div class="synth-steprotary synth-lfo1-waveform"></div></div>
+        <div class="synth-fader-frame synth-lfo1-rate-frame noselect"><div class="synth-fader synth-lfo1-rate"></div></div>
+        <div class="synth-fader-frame synth-lfo1-delay-frame noselect"><div class="synth-fader synth-lfo1-delay"></div></div>
+        <div class="synth-fader-frame synth-lfo1-lrphase-frame noselect"><div class="synth-fader synth-lfo1-lrphase"></div></div>
+        <div class="synth-switch-frame synth-lfo1-mode-frame noselect"><div class="synth-switch-1 synth-lfo1-mode"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-ddsmodulator-frame">
+      <div class="synth-section-ddsmodulator">
+        <div class="synth-fader-frame synth-ddsmod-lfo-frame noselect"><div class="synth-fader synth-ddsmod-lfo"></div></div>
+        <div class="synth-fader-frame synth-ddsmod-env1-frame noselect"><div class="synth-fader synth-ddsmod-env1"></div></div>
+        <div class="synth-switch-frame synth-ddsmod-env1target-frame noselect"><div class="synth-switch-1 synth-ddsmod-env1target"></div></div>
+        <div class="synth-switch-frame synth-ddsmod-mode-frame noselect"><div class="synth-switch-1 synth-ddsmod-mode"></div></div>
+        <div class="synth-fader-frame synth-ddsmod-pw-frame noselect"><div class="synth-fader synth-ddsmod-pw"></div></div>
+        <div class="synth-fader-frame synth-ddsmod-pwm-frame noselect"><div class="synth-fader synth-ddsmod-pwm"></div></div>
+        <div class="synth-switch-frame synth-ddsmod-pwmsource-frame noselect"><div class="synth-switch-1 synth-ddsmod-pwmsource"></div></div>
+        <div class="synth-fader-frame synth-ddsmod-crossmod-frame noselect"><div class="synth-fader synth-ddsmod-crossmod"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-oscillators-frame">
+      <div class="synth-section-oscillators">
+        <div class="synth-steprotary-frame synth-dds1-waveform-frame noselect"><div class="synth-steprotary synth-dds1-waveform"></div></div>
+        <div class="synth-steprotary-frame synth-dds1-range-frame noselect"><div class="synth-steprotary synth-dds1-range"></div></div>
+        <div class="synth-steprotary-frame synth-dds2-waveform-frame noselect"><div class="synth-steprotary synth-dds2-waveform"></div></div>
+        <div class="synth-steprotary-frame synth-dds2-range-frame noselect"><div class="synth-steprotary synth-dds2-range"></div></div>
+        <div class="synth-rotary-frame synth-dds2-tune-frame noselect"><div class="synth-rotary synth-dds2-tune"></div></div>
+        <div class="synth-switch-frame synth-dds2-mode-frame noselect"><div class="synth-switch-1 synth-dds2-mode"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-mixer-frame">
+      <div class="synth-section-mixer">
+        <div class="synth-rotary-frame synth-mixer-mix-frame noselect"><div class="synth-rotary synth-mixer-mix"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-vcf-frame">
+      <div class="synth-section-vcf">
+        <div class="synth-switch-frame synth-vcf-hpf-frame noselect"><div class="synth-switch-1 synth-vcf-hpf"></div></div>
+        <div class="synth-switch-frame synth-vcf-drive-frame noselect"><div class="synth-switch-1 synth-vcf-drive"></div></div>
+        <div class="synth-fader-frame synth-vcf-freq-frame noselect"><div class="synth-fader synth-vcf-freq"></div></div>
+        <div class="synth-fader-frame synth-vcf-res-frame noselect"><div class="synth-fader synth-vcf-res"></div></div>
+        <div class="synth-switch-frame synth-vcf-envsource-frame noselect"><div class="synth-switch-1 synth-vcf-envsource"></div></div>
+        <div class="synth-switch-frame synth-vcf-keytrack-frame noselect"><div class="synth-switch-1 synth-vcf-keytrack"></div></div>
+        <div class="synth-fader-frame synth-vcf-env-frame noselect"><div class="synth-fader synth-vcf-env"></div></div>
+        <div class="synth-fader-frame synth-vcf-lfo1-frame noselect"><div class="synth-fader synth-vcf-lfo1"></div></div>
+        <div class="synth-fader-frame synth-vcf-dds2-frame noselect"><div class="synth-fader synth-vcf-dds2"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-vca-frame">
+      <div class="synth-section-vca">
+        <div class="synth-switch-frame synth-vca-dynamics-frame noselect"><div class="synth-switch-1 synth-vca-dynamics"></div></div>
+        <div class="synth-switch-frame synth-vca-envlevelsource-frame noselect"><div class="synth-switch-1 synth-vca-envlevelsource"></div></div>
+        <div class="synth-fader-frame synth-vca-envlevel-frame noselect"><div class="synth-fader synth-vca-envlevel"></div></div>
+        <div class="synth-fader-frame synth-vca-lfo1-frame noselect"><div class="synth-fader synth-vca-lfo1"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-envelopes-frame">
+      <div class="synth-section-envelopes">
+        <div class="synth-switch-frame synth-env1-mode-frame noselect"><div class="synth-switch-1 synth-env1-mode"></div></div>
+        <div class="synth-switch-frame synth-env1-keytrack-frame noselect"><div class="synth-switch-1 synth-env1-keytrack"></div></div>
+        <div class="synth-fader-frame synth-env1-h-frame noselect"><div class="synth-fader synth-env1-h"></div></div>
+        <div class="synth-fader-frame synth-env1-a-frame noselect"><div class="synth-fader synth-env1-a"></div></div>
+        <div class="synth-fader-frame synth-env1-d-frame noselect"><div class="synth-fader synth-env1-d"></div></div>
+        <div class="synth-fader-frame synth-env1-s-frame noselect"><div class="synth-fader synth-env1-s"></div></div>
+        <div class="synth-fader-frame synth-env1-r-frame noselect"><div class="synth-fader synth-env1-r"></div></div>
+        <div class="synth-fader-frame synth-env2-a-frame noselect"><div class="synth-fader synth-env2-a"></div></div>
+        <div class="synth-fader-frame synth-env2-d-frame noselect"><div class="synth-fader synth-env2-d"></div></div>
+        <div class="synth-fader-frame synth-env2-s-frame noselect"><div class="synth-fader synth-env2-s"></div></div>
+        <div class="synth-fader-frame synth-env2-r-frame noselect"><div class="synth-fader synth-env2-r"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-performance-frame">
+      <div class="synth-section-performance">
+        <div class="synth-flipswitch-frame synth-perf-octave-frame noselect"><div class="synth-flipswitch-1 synth-perf-octave"></div></div>
+        <div class="synth-slider-frame synth-perf-portamento-frame noselect"><div class="synth-slider synth-perf-portamento"></div></div>
+        <div class="synth-button-frame synth-perf-manual-frame noselect"><div class="synth-button synth-button-green synth-perf-manual"><div class="synth-button-light"></div></div></div>
+        <div class="synth-rotary-frame synth-perf-lfo2rate-frame noselect"><div class="synth-rotary synth-perf-lfo2rate"></div></div>
+        <div class="synth-rotary-frame synth-perf-lfo2delay-frame noselect"><div class="synth-rotary synth-perf-lfo2delay"></div></div>
+        <div class="synth-rotary-frame synth-perf-mastervolume-frame noselect"><div class="synth-rotary synth-perf-mastervolume"></div></div>
+        <div class="synth-switch-frame synth-perf-mode-frame noselect"><div class="synth-switch-1 synth-perf-mode"></div></div>
+        <div class="synth-fader-frame synth-perf-leftvcf-frame noselect"><div class="synth-fader synth-perf-leftvcf"></div></div>
+        <div class="synth-fader-frame synth-perf-leftdds-frame noselect"><div class="synth-fader synth-perf-leftdds"></div></div>
+        <div class="synth-switch-frame synth-perf-ddstarget-frame noselect"><div class="synth-switch-1 synth-perf-ddstarget"></div></div>
+        <div class="synth-fader-frame synth-perf-rightdds-frame noselect"><div class="synth-fader synth-perf-rightdds"></div></div>
+        <div class="synth-fader-frame synth-perf-rightvcf-frame noselect"><div class="synth-fader synth-perf-rightvcf"></div></div>
+        <div class="synth-perf-pitchpush-frame noselect"><div class="synth-perf-pitchpush"></div></div>
+        <div class="synth-perf-pitchdown-frame noselect"><div class="synth-perf-pitchdown"></div></div>
+        <div class="synth-perf-pitchup-frame noselect"><div class="synth-perf-pitchup"></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-voiceassign-frame">
+      <div class="synth-section-voiceassign">
+        <div class="synth-button-frame synth-voice-assign-frame noselect">
+          <div class="synth-button synth-voice-assign"><div class="synth-button-light-1-5"></div><div class="synth-button-light-2-5"></div><div class="synth-button-light-3-5"></div><div class="synth-button-light-4-5"></div><div class="synth-button-light-5-5"></div></div>
+        </div>
+        <div class="synth-button-frame synth-voice-binaural-frame noselect"><div class="synth-button synth-voice-binaural"><div class="synth-button-light"></div></div></div>
+      </div>
+    </div>
+
+    <div class="synth-section-arpeggiator-frame">
+      <div class="synth-section-arpeggiator"></div>
+    </div>
+
+    <div class="synth-section-patch-frame">
+      <div class="synth-section-patch"></div>
+    </div>
+
+    <div class="synth-section-delay-frame">
+      <div class="synth-section-delay"></div>
+    </div>
+
+    <div class="synth-section-chorus-frame">
+      <div class="synth-section-chorus">
+        <div class="synth-button-frame synth-chorus-1-frame noselect"><div class="synth-button synth-button-blue synth-chorus-1"><div class="synth-button-light"></div></div></div>
+        <div class="synth-button-frame synth-chorus-2-frame noselect"><div class="synth-button synth-button-blue synth-chorus-2"><div class="synth-button-light"></div></div></div>
+      </div>
+    </div>
+
+    <div class="synth-rotary-frame synth-seq-tempo-frame noselect"><div class="synth-rotary synth-seq-tempo"></div></div>
+    <div class="synth-button-frame synth-seq-sync-frame noselect"><div class="synth-button synth-button-yellow synth-seq-sync"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-seq-range-frame noselect">
+      <div class="synth-button synth-button-yellow synth-seq-range"><div class="synth-button-light-1-4"></div><div class="synth-button-light-2-4"></div><div class="synth-button-light-3-4"></div><div class="synth-button-light-4-4"></div></div>
+    </div>
+    <div class="synth-button-frame synth-seq-mode-frame noselect">
+      <div class="synth-button synth-button-yellow synth-seq-mode"><div class="synth-button-light-1-5"></div><div class="synth-button-light-2-5"></div><div class="synth-button-light-3-5"></div><div class="synth-button-light-4-5"></div><div class="synth-button-light-5-5"></div></div>
+    </div>
+    <div class="synth-button-frame synth-seq-on-frame noselect"><div class="synth-button synth-button-yellow synth-seq-on"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-seq-hold-frame noselect"><div class="synth-button synth-button-green synth-seq-hold"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-seq-seqrec-frame noselect">
+      <div class="synth-button synth-button-yellow synth-seq-seqrec"><div class="synth-button-light-1-6"></div><div class="synth-button-light-2-6"></div><div class="synth-button-light-3-6"></div><div class="synth-button-light-4-6"></div><div class="synth-button-light-5-6"></div><div class="synth-button-light-6-6"></div></div>
+    </div>
+
+    <div class="synth-continuousrotary-frame synth-mod-amount-frame noselect"><div class="synth-continuousrotary synth-mod-amount"></div></div>
+    <div class="synth-button-frame synth-mod-modassign-frame noselect"><div class="synth-button synth-button-red synth-mod-modassign"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-1-frame noselect"><div class="synth-button synth-mod-1"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-2-frame noselect"><div class="synth-button synth-mod-2"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-3-frame noselect"><div class="synth-button synth-mod-3"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-4-frame noselect"><div class="synth-button synth-mod-4"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-5-frame noselect"><div class="synth-button synth-mod-5"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-6-frame noselect"><div class="synth-button synth-mod-6"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-7-frame noselect"><div class="synth-button synth-mod-7"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-8-frame noselect"><div class="synth-button synth-mod-8"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-a-frame noselect"><div class="synth-button synth-button-yellow synth-mod-a"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-b-frame noselect"><div class="synth-button synth-button-yellow synth-mod-b"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-c-frame noselect"><div class="synth-button synth-button-yellow synth-mod-c"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-d-frame noselect"><div class="synth-button synth-button-yellow synth-mod-d"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-e-frame noselect"><div class="synth-button synth-button-orange synth-mod-e"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-f-frame noselect"><div class="synth-button synth-button-orange synth-mod-f"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-g-frame noselect"><div class="synth-button synth-button-orange synth-mod-g"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-h-frame noselect"><div class="synth-button synth-button-orange synth-mod-h"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-patch-frame noselect"><div class="synth-button synth-button-red synth-mod-patch"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-shift-frame noselect"><div class="synth-button synth-button-red synth-mod-shift"><div class="synth-button-light"></div></div></div>
+    <div class="synth-button-frame synth-mod-wave-frame noselect"><div class="synth-button synth-button-red synth-mod-wave"><div class="synth-button-light"></div></div></div>
+
+    <div class="synth-rotary-frame synth-delay-level-frame noselect"><div class="synth-rotary synth-delay-level"></div></div>
+    <div class="synth-rotary-frame synth-delay-time-frame noselect"><div class="synth-rotary synth-delay-time"></div></div>
+    <div class="synth-rotary-frame synth-delay-feedback-frame noselect"><div class="synth-rotary synth-delay-feedback"></div></div>
+
+    <div class="synth-keyboard-frame noselect">
+      <div class="synth-octave-1-frame noselect">
+        <div class="synth-key-frame synth-key-c-frame noselect"><div class="synth-key synth-key-1 synth-key-c"></div></div>
+        <div class="synth-key-frame synth-key-db-frame noselect"><div class="synth-key synth-key-2 synth-key-db"></div></div>
+        <div class="synth-key-frame synth-key-d-frame noselect"><div class="synth-key synth-key-3 synth-key-d"></div></div>
+        <div class="synth-key-frame synth-key-eb-frame noselect"><div class="synth-key synth-key-2 synth-key-eb"></div></div>
+        <div class="synth-key-frame synth-key-e-frame noselect"><div class="synth-key synth-key-4 synth-key-e"></div></div>
+        <div class="synth-key-frame synth-key-f-frame noselect"><div class="synth-key synth-key-1 synth-key-f"></div></div>
+        <div class="synth-key-frame synth-key-gb-frame noselect"><div class="synth-key synth-key-2 synth-key-gb"></div></div>
+        <div class="synth-key-frame synth-key-g-frame noselect"><div class="synth-key synth-key-3 synth-key-g"></div></div>
+        <div class="synth-key-frame synth-key-ab-frame noselect"><div class="synth-key synth-key-2 synth-key-ab"></div></div>
+        <div class="synth-key-frame synth-key-a-frame noselect"><div class="synth-key synth-key-3 synth-key-a"></div></div>
+        <div class="synth-key-frame synth-key-bb-frame noselect"><div class="synth-key synth-key-2 synth-key-bb"></div></div>
+        <div class="synth-key-frame synth-key-b-frame noselect"><div class="synth-key synth-key-4 synth-key-b"></div></div>
+      </div>
+      <div class="synth-octave-2-frame noselect">
+        <div class="synth-key-frame synth-key-c-frame noselect"><div class="synth-key synth-key-1 synth-key-c"></div></div>
+        <div class="synth-key-frame synth-key-db-frame noselect"><div class="synth-key synth-key-2 synth-key-db"></div></div>
+        <div class="synth-key-frame synth-key-d-frame noselect"><div class="synth-key synth-key-3 synth-key-d"></div></div>
+        <div class="synth-key-frame synth-key-eb-frame noselect"><div class="synth-key synth-key-2 synth-key-eb"></div></div>
+        <div class="synth-key-frame synth-key-e-frame noselect"><div class="synth-key synth-key-4 synth-key-e"></div></div>
+        <div class="synth-key-frame synth-key-f-frame noselect"><div class="synth-key synth-key-1 synth-key-f"></div></div>
+        <div class="synth-key-frame synth-key-gb-frame noselect"><div class="synth-key synth-key-2 synth-key-gb"></div></div>
+        <div class="synth-key-frame synth-key-g-frame noselect"><div class="synth-key synth-key-3 synth-key-g"></div></div>
+        <div class="synth-key-frame synth-key-ab-frame noselect"><div class="synth-key synth-key-2 synth-key-ab"></div></div>
+        <div class="synth-key-frame synth-key-a-frame noselect"><div class="synth-key synth-key-3 synth-key-a"></div></div>
+        <div class="synth-key-frame synth-key-bb-frame noselect"><div class="synth-key synth-key-2 synth-key-bb"></div></div>
+        <div class="synth-key-frame synth-key-b-frame noselect"><div class="synth-key synth-key-4 synth-key-b"></div></div>
+      </div>
+      <div class="synth-octave-3-frame noselect">
+        <div class="synth-key-frame synth-key-c-frame noselect"><div class="synth-key synth-key-1 synth-key-c"></div></div>
+        <div class="synth-key-frame synth-key-db-frame noselect"><div class="synth-key synth-key-2 synth-key-db"></div></div>
+        <div class="synth-key-frame synth-key-d-frame noselect"><div class="synth-key synth-key-3 synth-key-d"></div></div>
+        <div class="synth-key-frame synth-key-eb-frame noselect"><div class="synth-key synth-key-2 synth-key-eb"></div></div>
+        <div class="synth-key-frame synth-key-e-frame noselect"><div class="synth-key synth-key-4 synth-key-e"></div></div>
+        <div class="synth-key-frame synth-key-f-frame noselect"><div class="synth-key synth-key-1 synth-key-f"></div></div>
+        <div class="synth-key-frame synth-key-gb-frame noselect"><div class="synth-key synth-key-2 synth-key-gb"></div></div>
+        <div class="synth-key-frame synth-key-g-frame noselect"><div class="synth-key synth-key-3 synth-key-g"></div></div>
+        <div class="synth-key-frame synth-key-ab-frame noselect"><div class="synth-key synth-key-2 synth-key-ab"></div></div>
+        <div class="synth-key-frame synth-key-a-frame noselect"><div class="synth-key synth-key-3 synth-key-a"></div></div>
+        <div class="synth-key-frame synth-key-bb-frame noselect"><div class="synth-key synth-key-2 synth-key-bb"></div></div>
+        <div class="synth-key-frame synth-key-b-frame noselect"><div class="synth-key synth-key-4 synth-key-b"></div></div>
+      </div>
+      <div class="synth-octave-4-frame noselect">
+        <div class="synth-key-frame synth-key-c-frame noselect"><div class="synth-key synth-key-1 synth-key-c"></div></div>
+        <div class="synth-key-frame synth-key-db-frame noselect"><div class="synth-key synth-key-2 synth-key-db"></div></div>
+        <div class="synth-key-frame synth-key-d-frame noselect"><div class="synth-key synth-key-3 synth-key-d"></div></div>
+        <div class="synth-key-frame synth-key-eb-frame noselect"><div class="synth-key synth-key-2 synth-key-eb"></div></div>
+        <div class="synth-key-frame synth-key-e-frame noselect"><div class="synth-key synth-key-4 synth-key-e"></div></div>
+        <div class="synth-key-frame synth-key-f-frame noselect"><div class="synth-key synth-key-1 synth-key-f"></div></div>
+        <div class="synth-key-frame synth-key-gb-frame noselect"><div class="synth-key synth-key-2 synth-key-gb"></div></div>
+        <div class="synth-key-frame synth-key-g-frame noselect"><div class="synth-key synth-key-3 synth-key-g"></div></div>
+        <div class="synth-key-frame synth-key-ab-frame noselect"><div class="synth-key synth-key-2 synth-key-ab"></div></div>
+        <div class="synth-key-frame synth-key-a-frame noselect"><div class="synth-key synth-key-3 synth-key-a"></div></div>
+        <div class="synth-key-frame synth-key-bb-frame noselect"><div class="synth-key synth-key-2 synth-key-bb"></div></div>
+        <div class="synth-key-frame synth-key-b-frame noselect"><div class="synth-key synth-key-4 synth-key-b"></div></div>
+      </div>
+      <div class="synth-octave-5-frame noselect">
+        <div class="synth-key-frame synth-key-c-frame noselect"><div class="synth-key synth-key-5 synth-key-c"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/webpatcher.js"></script>
+</body>
+</html

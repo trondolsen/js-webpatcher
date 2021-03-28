@@ -1,0 +1,1931 @@
+/***
+ * WebPatcher for Super6
+ * Copyright (c) 2021 Trond Olsen
+ * Licensed under MIT
+ */
+
+/*
+ * User Interface
+ */
+
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.nodrag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+.nodrag:focus {
+  outline: none;
+}
+
+.menu-title {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-size: 0.5vw i !important;
+  float: left;
+}
+
+.menu-frame {
+  margin: 0.25rem 0.0rem 0.25rem 0.0rem;
+}
+
+.menu-frame .applogo  {
+  margin: 0.125rem 0.125rem 0.125rem 0.25rem;
+  border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.menu-frame .midi-label.btn  {
+  margin: 0.125rem 0.0rem 0.125rem 0.25rem;
+  border-radius: 0.2rem 0.0rem 0.0rem 0.2rem;
+}
+
+.menu-frame .midi-input.btn, .menu-frame .midi-output.btn, .menu-frame .midi-events.btn {
+  margin: 0.125rem 0.0rem 0.125rem 0.0rem;
+  border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
+}
+
+.menu-frame .midi-input-channel.btn, .menu-frame .midi-output-channel.btn, .menu-frame .midi-events.btn {
+  margin: 0.125rem 0.25rem 0.125rem 0.0rem;
+  border-radius: 0.0rem 0.2rem 0.2rem 0.0rem;
+}
+
+
+
+/*
+ * Synth Frame
+ */
+
+.synth-chassis-black {
+  background-image: url("chassis-black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-chassis-blue {
+  background-image: url("chassis-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-chassis-frame {
+  position: absolute;
+  width: 100vw;
+  height: 49.9vw;
+  z-index: 4;
+}
+
+.synth-section-lfo-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 2.0vw;
+}
+
+.synth-section-ddsmodulator-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 13.6vw;
+}
+
+.synth-section-oscillators-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 33.6vw;
+}
+
+.synth-section-mixer-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 47.5vw;
+}
+
+.synth-section-vcf-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 51.8vw;
+}
+
+.synth-section-vca-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 68.6vw;
+}
+
+.synth-section-envelopes-frame {
+  position: absolute;
+  z-index: 10;
+  top: 3.2vw;
+  left: 76.5vw;
+}
+
+.synth-section-performance-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 2.0vw;
+}
+
+.synth-section-voiceassign-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 15.1vw;
+}
+
+.synth-section-arpeggiator-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 22.0vw;
+}
+
+.synth-section-patch-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 43.1vw;
+}
+
+.synth-section-delay-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 81.6vw;
+}
+
+.synth-section-chorus-frame {
+  position: absolute;
+  z-index: 10;
+  top: 16.2vw;
+  left: 92.4vw;
+}
+
+.synth-fader-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-slider-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-steprotary-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-continuousrotary-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-rotary-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-button-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-switch-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-flipswitch-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-perf-pitchpush-frame {
+  position: absolute;
+  z-index: 10;
+  top: 19.8vw;
+  left: 4.3vw;
+}
+
+.synth-perf-pitchdown-frame {
+  position: absolute;
+  z-index: 10;
+  top: 20.5vw;
+  left: 4.4vw;
+}
+
+.synth-perf-pitchup-frame {
+  position: absolute;
+  z-index: 10;
+  top: 20.5vw;
+  left: 7.0vw;
+}
+
+.synth-keyboard-frame {
+  position: absolute;
+  top: 26.0vw;
+  left: 16.54vw;
+}
+
+.synth-octave-1-frame {
+  position: absolute;
+  top: 0.0vw;
+  left: 0.0vw;
+}
+
+.synth-octave-2-frame {
+  position: absolute;
+  top: 0.0vw;
+  left: 18.9vw;
+}
+
+.synth-octave-3-frame {
+  position: absolute;
+  top: 0.0vw;
+  left: 37.8vw;
+}
+
+.synth-octave-4-frame {
+  position: absolute;
+  top: 0.0vw;
+  left: 56.7vw;
+}
+
+.synth-octave-5-frame {
+  position: absolute;
+  top: 0.0vw;
+  left: 75.6vw;
+}
+
+.synth-key-frame {
+  position: absolute;
+  z-index: 10;
+}
+
+.synth-lfo1-rate-frame {
+  top: 7.9vw;
+  left: 0.7vw;
+}
+
+.synth-lfo1-delay-frame {
+  top: 7.9vw;
+  left: 2.5vw;
+}
+
+.synth-lfo1-lrphase-frame {
+  top: 7.9vw;
+  left: 4.3vw;
+}
+
+.synth-lfo1-waveform-frame {
+  top: 3.05vw;
+  left: 7.3vw;
+}
+
+.synth-lfo1-mode-frame {
+  top: 7.0vw;
+  left: 7.65vw;
+}
+
+.synth-ddsmod-lfo-frame {
+  top: 7.9vw;
+  left: 1.1vw;
+}
+
+.synth-ddsmod-env1-frame {
+  top: 7.9vw;
+  left: 2.9vw;
+}
+
+.synth-ddsmod-env1target-frame {
+  top: 4.9vw;
+  left: 5.3vw;
+}
+
+.synth-ddsmod-mode-frame {
+  top: 4.9vw;
+  left: 8.2vw;
+}
+
+.synth-ddsmod-pw-frame {
+  top: 7.9vw;
+  left: 10.5vw;
+}
+
+.synth-ddsmod-pwm-frame {
+  top: 7.9vw;
+  left: 12.4vw;
+}
+
+.synth-ddsmod-pwmsource-frame {
+  top: 4.9vw;
+  left: 14.8vw;
+}
+
+.synth-ddsmod-crossmod-frame {
+  top: 7.9vw;
+  left: 17.8vw;
+}
+
+.synth-dds1-waveform-frame {
+  top: 3.05vw;
+  left: 1.5vw;
+}
+
+.synth-dds1-range-frame {
+  top: 7.2vw;
+  left: 1.5vw;
+}
+
+.synth-dds2-waveform-frame {
+  top: 3.05vw;
+  left: 6.05vw;
+}
+
+.synth-dds2-range-frame {
+  top: 7.2vw;
+  left: 6.05vw;
+}
+
+.synth-dds2-tune-frame {
+  top: 3.05vw;
+  left: 10.25vw;
+}
+
+.synth-dds2-mode-frame {
+  top: 7.0vw;
+  left: 10.8vw;
+}
+
+.synth-mixer-mix-frame {
+  top: 4.9vw;
+  left: 1.0vw;
+}
+
+.synth-vcf-hpf-frame {
+  top: 2.75vw;
+  left: 0.6vw;
+}
+
+.synth-vcf-drive-frame {
+  top: 7.0vw;
+  left: 0.6vw;
+}
+
+.synth-vcf-freq-frame {
+  top: 7.9vw;
+  left: 2.9vw;
+}
+
+.synth-vcf-res-frame {
+  top: 7.9vw;
+  left: 4.8vw;
+}
+
+.synth-vcf-envsource-frame {
+  top: 2.8vw;
+  left: 7.65vw;
+}
+
+.synth-vcf-keytrack-frame {
+  top: 7.0vw;
+  left: 7.65vw;
+}
+
+.synth-vcf-env-frame {
+  top: 7.9vw;
+  left: 10.2vw;
+}
+
+.synth-vcf-lfo1-frame {
+  top: 7.9vw;
+  left: 12.1vw;
+}
+
+.synth-vcf-dds2-frame {
+  top: 7.9vw;
+  left: 13.9vw;
+}
+
+.synth-vca-dynamics-frame {
+  top: 2.8vw;
+  left: 1.0vw;
+}
+
+.synth-vca-envlevelsource-frame {
+  top: 7.0vw;
+  left: 1.0vw;
+}
+
+.synth-vca-envlevel-frame {
+  top: 7.9vw;
+  left: 3.55vw;
+}
+
+.synth-vca-lfo1-frame {
+  top: 7.9vw;
+  left: 5.4vw;
+}
+
+.synth-env1-mode-frame {
+  top: 2.8vw;
+  left: 0.85vw;
+}
+
+.synth-env1-keytrack-frame {
+  top: 7.0vw;
+  left: 0.85vw;
+}
+
+.synth-env1-h-frame {
+  top: 7.9vw;
+  left: 3.3vw;
+}
+
+.synth-env1-a-frame {
+  top: 7.9vw;
+  left: 5.15vw;
+}
+
+.synth-env1-d-frame {
+  top: 7.9vw;
+  left: 6.9vw;
+}
+
+.synth-env1-s-frame {
+  top: 7.9vw;
+  left: 8.75vw;
+}
+
+.synth-env1-r-frame {
+  top: 7.9vw;
+  left: 10.55vw;
+}
+
+.synth-env2-a-frame {
+  top: 7.9vw;
+  left: 14.2vw;
+}
+
+.synth-env2-d-frame {
+  top: 7.9vw;
+  left: 16vw;
+}
+
+.synth-env2-s-frame {
+  top: 7.9vw;
+  left: 17.8vw;
+}
+
+.synth-env2-r-frame {
+  top: 7.9vw;
+  left: 19.6vw;
+}
+
+.synth-perf-octave-frame {
+  top: 1.7vw;
+  left: 3.7vw;
+}
+
+.synth-perf-portamento-frame {
+  top: 3.6vw;
+  left: 1.7vw;
+}
+
+.synth-perf-manual-frame {
+  top: 2.0vw;
+  left: 10.0vw;
+}
+
+.synth-perf-lfo2rate-frame {
+  top: 7.1vw;
+  left: 1.65vw;
+}
+
+.synth-perf-lfo2delay-frame {
+  top: 7.1vw;
+  left: 5.7vw;
+}
+
+.synth-perf-mastervolume-frame {
+  top: 7.1vw;
+  left: 9.75vw;
+}
+
+.synth-perf-mode-frame {
+  top: 13.65vw;
+  left: 0.86vw;
+}
+
+.synth-perf-leftvcf-frame {
+  top: 16.7vw;
+  left: 2.8vw;
+}
+
+.synth-perf-leftdds-frame {
+  top: 16.7vw;
+  left: 4.7vw;
+}
+
+.synth-perf-ddstarget-frame {
+  top: 13.65vw;
+  left: 7.75vw;
+}
+
+.synth-perf-rightdds-frame {
+  top: 16.7vw;
+  left: 9.7vw;
+}
+
+.synth-perf-rightvcf-frame {
+  top: 16.7vw;
+  left: 11.6vw;
+}
+
+.synth-voice-assign-frame {
+  top: 2.0vw;
+  left: 0.8vw;
+}
+
+.synth-voice-binaural-frame {
+  top: 2.0vw;
+  left: 4.4vw;
+}
+
+.synth-seq-tempo-frame {
+  top: 18.4vw;
+  left: 22.95vw;
+}
+
+.synth-seq-sync-frame {
+  top: 18.2vw;
+  left: 26.2vw;
+}
+
+.synth-seq-range-frame {
+  top: 18.2vw;
+  left: 28.2vw;
+}
+
+.synth-seq-mode-frame {
+  top: 18.2vw;
+  left: 31.6vw;
+}
+
+.synth-seq-on-frame {
+  top: 18.2vw;
+  left: 35.5vw;
+}
+
+.synth-seq-hold-frame {
+  top: 18.2vw;
+  left: 37.5vw;
+}
+
+.synth-seq-seqrec-frame {
+  top: 18.2vw;
+  left: 39.6vw;
+}
+
+.synth-mod-amount-frame {
+  top: 18.4vw;
+  left: 44.2vw;
+}
+
+.synth-mod-modassign-frame {
+  top: 18.2vw;
+  left: 47.3vw;
+}
+
+.synth-mod-1-frame {
+  top: 18.2vw;
+  left: 49.4vw;
+}
+
+.synth-mod-2-frame {
+  top: 18.2vw;
+  left: 51.0vw;
+}
+
+.synth-mod-3-frame {
+  top: 18.2vw;
+  left: 52.6vw;
+}
+
+.synth-mod-4-frame {
+  top: 18.2vw;
+  left: 54.2vw;
+}
+
+.synth-mod-5-frame {
+  top: 18.2vw;
+  left: 55.8vw;
+}
+
+.synth-mod-6-frame {
+  top: 18.2vw;
+  left: 57.4vw;
+}
+
+.synth-mod-7-frame {
+  top: 18.2vw;
+  left: 59.0vw;
+}
+
+.synth-mod-8-frame {
+  top: 18.2vw;
+  left: 60.6vw;
+}
+
+.synth-mod-a-frame {
+  top: 18.2vw;
+  left: 62.2vw;
+}
+
+.synth-mod-b-frame {
+  top: 18.2vw;
+  left: 63.8vw;
+}
+
+.synth-mod-c-frame {
+  top: 18.2vw;
+  left: 65.4vw;
+}
+
+.synth-mod-d-frame {
+  top: 18.2vw;
+  left: 67.0vw;
+}
+
+.synth-mod-e-frame {
+  top: 18.2vw;
+  left: 68.6vw;
+}
+
+.synth-mod-f-frame {
+  top: 18.2vw;
+  left: 70.2vw;
+}
+
+.synth-mod-g-frame {
+  top: 18.2vw;
+  left: 71.8vw;
+}
+
+.synth-mod-h-frame {
+  top: 18.2vw;
+  left: 73.4vw;
+}
+
+.synth-mod-patch-frame {
+  top: 18.2vw;
+  left: 75.4vw;
+}
+
+.synth-mod-shift-frame {
+  top: 18.2vw;
+  left: 77.5vw;
+}
+
+.synth-mod-wave-frame {
+  top: 18.2vw;
+  left: 79.6vw;
+}
+
+.synth-delay-level-frame {
+  top: 18.35vw;
+  left: 82.5vw;
+}
+
+.synth-delay-time-frame {
+  top: 18.35vw;
+  left: 86.1vw;
+}
+
+.synth-delay-feedback-frame {
+  top: 18.35vw;
+  left: 89.6vw;
+}
+
+.synth-chorus-1-frame {
+  top: 2.0vw;
+  left: 1.0vw;
+}
+
+.synth-chorus-2-frame {
+  top: 2.0vw;
+  left: 3.4vw;
+}
+
+.synth-key-c-frame {
+  top: 0.0vw;
+  left: 0.0vw;
+}
+
+.synth-key-db-frame {
+  top: 0.0vw;
+  left: 2.1vw;
+}
+
+.synth-key-d-frame {
+  top: 0.0vw;
+  left: 2.7vw;
+}
+
+.synth-key-eb-frame {
+  top: 0.0vw;
+  left: 4.8vw;
+}
+
+.synth-key-e-frame {
+  top: 0.0vw;
+  left: 5.4vw;
+}
+
+.synth-key-f-frame {
+  top: 0.0vw;
+  left: 8.1vw;
+}
+
+.synth-key-gb-frame {
+  top: 0.0vw;
+  left: 10.2vw;
+}
+
+.synth-key-g-frame {
+  top: 0.0vw;
+  left: 10.8vw;
+}
+
+.synth-key-ab-frame {
+  top: 0.0vw;
+  left: 12.9vw;
+}
+
+.synth-key-a-frame {
+  top: 0.0vw;
+  left: 13.5vw;
+}
+
+.synth-key-bb-frame {
+  top: 0.0vw;
+  left: 15.6vw;
+}
+
+.synth-key-b-frame {
+  top: 0.0vw;
+  left: 16.2vw;
+}
+
+
+
+/*
+ * Synth Elements
+ */
+
+.synth-section-lfo {
+  position: relative;
+  width: 11.4vw;
+  height: 10.2vw;
+  background-image: url("section-lfo1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-ddsmodulator {
+  position: relative;
+  width: 20.0vw;
+  height: 10.2vw;
+  background-image: url("section-ddsmodulator.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-oscillators {
+  position: relative;
+  width: 13.5vw;
+  height: 10.2vw;
+  background-image: url("section-oscillators.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-mixer {
+  position: relative;
+  width: 4.05vw;
+  height: 10.2vw;
+  background-image: url("section-mixer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-vcf {
+  position: relative;
+  width: 16.4vw;
+  height: 10.2vw;
+  background-image: url("section-vcf.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-vca {
+  position: relative;
+  width: 7.33vw;
+  height: 10.2vw;
+  background-image: url("section-vca.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-envelopes {
+  position: relative;
+  width: 22.25vw;
+  height: 10.2vw;
+  background-image: url("section-envelopes.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-performance {
+  position: relative;
+  width: 13.5vw;
+  height: 21.84vw;
+  background-image: url("section-performance.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-voiceassign {
+  position: relative;
+  width: 6.5vw;
+  height: 5.84vw;
+  background-image: url("section-voiceassign.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-arpeggiator {
+  position: relative;
+  width: 21.1vw;
+  height: 5.84vw;
+  background-image: url("section-arpeggiator.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-patch {
+  position: relative;
+  width: 38.5vw;
+  height: 5.84vw;
+  background-image: url("section-patch.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-delay {
+  position: relative;
+  width: 10.6vw;
+  height: 5.84vw;
+  background-image: url("section-delay.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-section-chorus {
+  position: relative;
+  width: 6.2vw;
+  height: 5.84vw;
+  background-image: url("section-chorus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-fader {
+  position: relative;
+  width: 1.5vw;
+  height: 0.88vw;
+  background-image: url("control-fader.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-fader:hover {
+  cursor: grab;
+}
+
+.synth-slider {
+  position: relative;
+  width: 0.88vw;
+  height: 1.5vw;
+  background-image: url("control-slider.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-slider:hover {
+  cursor: grab;
+}
+
+.synth-steprotary {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  background-image: url("control-rotary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-78deg);
+}
+
+.synth-steprotary:hover {
+  cursor: grab;
+}
+
+.synth-continuousrotary {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  background-image: url("control-continuousrotary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-148deg);
+}
+
+.synth-continuousrotary:hover {
+  cursor: grab;
+}
+
+.synth-rotary {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  background-image: url("control-rotary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-148deg);
+}
+
+.synth-rotary:hover {
+  cursor: grab;
+}
+
+.synth-button {
+  position: absolute;
+  width: 1.5vw;
+  height: 2.2vw;
+  background-image: url("control-button-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-white {
+  background-image: url("control-button-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-yellow {
+  background-image: url("control-button-yellow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-orange {
+  background-image: url("control-button-orange.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-green {
+  background-image: url("control-button-green.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-blue {
+  background-image: url("control-button-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button-red {
+  background-image: url("control-button-red.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-button:hover {
+  cursor: pointer;
+}
+
+.synth-button-light {
+  position: absolute;
+  width: 1.5vw;
+  height: 2.2vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-1-4 {
+  position: absolute;
+  top: 0.0vw;
+  left: 1.4vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-2-4 {
+  position: absolute;
+  top: 0.44vw;
+  left: 1.4vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-3-4 {
+  position: absolute;
+  top: 1.0vw;
+  left: 1.4vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-4-4 {
+  position: absolute;
+  top: 1.63vw;
+  left: 1.4vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-1-5 {
+  position: absolute;
+  top: -0.45vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-2-5 {
+  position: absolute;
+  top: 0.15vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-3-5 {
+  position: absolute;
+  top: 0.7vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-4-5 {
+  position: absolute;
+  top: 1.35vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-5-5 {
+  position: absolute;
+  top: 1.9vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-1-6 {
+  position: absolute;
+  top: -0.45vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-2-6 {
+  position: absolute;
+  top: 0.15vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-3-6 {
+  position: absolute;
+  top: 0.7vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-4-6 {
+  position: absolute;
+  top: 1.35vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-5-6 {
+  position: absolute;
+  top: 1.9vw;
+  left: 1.35vw;
+  width: 1.5vw;
+  height: 1.8vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-button-light-6-6 {
+  position: absolute;
+  width: 1.6vw;
+  height: 2.2vw;
+  background-image: url("control-button-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.synth-switch-1 {
+  position: relative;
+  width: 0.8vw;
+  height: 1.92vw;
+  background-image: url("control-switch-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-switch-1:hover {
+  cursor: pointer;
+}
+
+.synth-switch-2 {
+  position: relative;
+  width: 0.8vw;
+  height: 1.92vw;
+  background-image: url("control-switch-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-switch-2:hover {
+  cursor: pointer;
+}
+
+.synth-switch-3 {
+  position: relative;
+  width: 0.8vw;
+  height: 1.92vw;
+  background-image: url("control-switch-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-switch-3:hover {
+  cursor: pointer;
+}
+
+.synth-flipswitch-1 {
+  position: relative;
+  width: 1.92vw;
+  height: 0.8vw;
+  background-image: url("control-flipswitch-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-flipswitch-1:hover {
+  cursor: pointer;
+}
+
+.synth-flipswitch-2 {
+  position: relative;
+  width: 1.92vw;
+  height: 0.8vw;
+  background-image: url("control-flipswitch-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-flipswitch-2:hover {
+  cursor: pointer;
+}
+
+.synth-flipswitch-3 {
+  position: relative;
+  width: 1.92vw;
+  height: 0.8vw;
+  background-image: url("control-flipswitch-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-perf-pitchpush {
+  position: absolute;
+  width: 5.0vw;
+  height: 0.7vw;
+  background-image: url("control-pitch-push.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.0;
+}
+
+.synth-perf-pitchdown {
+  position: absolute;
+  width: 2.5vw;
+  height: 0.8vw;
+  background-image: url("control-pitch-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.0;
+}
+
+.synth-perf-pitchup {
+  position: absolute;
+  width: 2.5vw;
+  height: 0.8vw;
+  background-image: url("control-pitch-up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.0;
+}
+
+.synth-flipswitch-3:hover {
+  cursor: pointer;
+}
+
+.synth-lfo1-rate {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-lfo1-delay {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-lfo1-lrphase {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-lfo1-waveform {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-lfo1-mode {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-lfo {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-env1 {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-env1target {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-mode {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-pw {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-pwm {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-pwmsource {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-ddsmod-crossmod {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-mixer-mix {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-dds1-waveform {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-dds1-range {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-dds2-waveform {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-dds2-range {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-dds2-tune {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vcf-mode {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vcf-hpf {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vcf-drive {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vcf-freq {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vcf-res {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vcf-envsource {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vcf-keytrack {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vcf-env {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vcf-lfo1 {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vcf-dds2 {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vca-dynamics {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vca-envlevelsource {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-vca-envlevel {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-vca-lfo1 {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env1-h {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env1-a {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env1-d {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env1-s {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env1-r {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env2-a {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env2-d {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env2-s {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-env2-r {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-octave {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-perf-portamento {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-perf-manual {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-perf-lfo2rate {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-lfo2delay {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-mastervolume {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-mode {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-perf-leftvcf {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-leftdds {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-ddstarget {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-perf-rightdds {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-perf-rightvcf {
+  top: 0.0vw;
+  left: 0vw;
+}
+
+.synth-voice-assign {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-voice-binaural {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-tempo {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-sync {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-range {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-mode {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-on {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-hold {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-seq-seqrec {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-amount {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-modassign {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-1 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-2 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-3 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-4 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-5 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-6 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-7 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-8 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-a {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-b {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-c {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-d {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-e {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-f {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-g {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-h {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-patch {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-shift {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-mod-wave {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-delay-level {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-delay-time {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-delay-feedback {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-chorus-1 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-chorus-2 {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-1 {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-1.down {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-1-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-2 {
+  z-index: 11;
+  width: 1.22vw;
+  height: 16.3vw;
+  background-image: url("control-key-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-2.down {
+  z-index: 11;
+  width: 1.22vw;
+  height: 16.3vw;
+  background-image: url("control-key-2-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-3 {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-3.down {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-3-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-4 {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-4.down {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-4-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-5 {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-5.down {
+  width: 2.7vw;
+  height: 16.3vw;
+  background-image: url("control-key-5-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.synth-key-c {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-db {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-d {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-eb {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-e {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-f {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-gb {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-g {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-ab {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-a {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-bb {
+  top: 0vw;
+  left: 0vw;
+}
+
+.synth-key-b {
+  top: 0vw;
+  left: 0vw;
+}

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="106.07632mm"
+   height="16.076319mm"
+   viewBox="0 0 106.07632 16.076319"
+   version="1.1"
+   id="svg7001">
+  <defs
+     id="defs6995">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath961">
+      <path
+         d="M 165.118,473.544 H 561.259 V 642.063 H 165.118 Z"
+         id="path959" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="224.40822"
+     inkscape:cy="-34.034313"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="2420"
+     inkscape:window-height="1406"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid14019" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6998">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(30.359595,-91.747554)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.076319;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect41388-0-0-7-8-5-1-4-0-2"
+       width="106.00001"
+       height="15.999999"
+       x="-30.321436"
+       y="91.785713" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m -29.32016,92.834236 -0.04725,13.843374"
+       id="path14021" />
+    <path
+       style="fill:none;stroke:#fe5045;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -28.351597,94.724116 H 74.623289"
+       id="path14023" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.6px;line-height:1.25;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.101;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-28.248142"
+       y="94.208488"
+       id="text41512"><tspan
+         sodipodi:role="line"
+         id="tspan41510"
+         x="-28.248142"
+         y="94.208488"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.6px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI';fill:#ece8e5;fill-opacity:1;stroke-width:0.101;stroke-miterlimit:4;stroke-dasharray:none">PATCH / WAVE  / MOD MATRIX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="-28.22846"
+       y="106.63044"
+       id="text41910"><tspan
+         id="tspan41908"
+         x="-28.22846"
+         y="106.63044"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">MOD AMOUNT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="-19.952866"
+       y="105.08788"
+       id="text41910-8"><tspan
+         id="tspan41908-2"
+         x="-19.952866"
+         y="105.08788"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">MOD ASSIGN</tspan></text>
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -25.719339,102.3852 -0.663956,1.15045"
+       id="path5187"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -26.339456,101.73201 -1.091406,0.75241"
+       id="path5189" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -26.752867,100.91345 -1.165821,0.21498"
+       id="path5191" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -26.728063,100.004 -1.149284,-0.314195"
+       id="path5193" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -26.298115,99.193705 -0.917773,-0.76894"
+       id="path5195" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -25.545706,98.623195 -0.520898,-1.0666"
+       id="path5197" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.0965304;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -24.671009,98.451295 0.0059,-1.19058"
+       id="path5199"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -23.759769,98.631465 0.504362,-1.08314"
+       id="path5201" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -23.023896,99.177175 0.926041,-0.76068"
+       id="path5203" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -22.593948,100.004 1.149284,-0.297665"
+       id="path5205" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -22.544339,100.92172 1.149284,0.21498"
+       id="path5207" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -22.966019,101.74028 1.066602,0.75241"
+       id="path5209" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -23.619209,102.3852 0.67214,1.14208"
+       id="path5211"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ece8e5;stroke-width:0.0965304;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -24.672232,103.74121 0.0059,-1.19059"
+       id="path5199-2"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="-11.389229"
+       y="105.10891"
+       id="text41910-8-1"><tspan
+         id="tspan41908-2-5"
+         x="-11.389229"
+         y="105.10891"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="-6.9771194"
+       y="105.11673"
+       id="text41910-8-1-3"><tspan
+         id="tspan41908-2-5-6"
+         x="-6.9771194"
+         y="105.11673"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="-2.3498292"
+       y="105.13839"
+       id="text41910-8-1-3-2"><tspan
+         id="tspan41908-2-5-6-8"
+         x="-2.3498292"
+         y="105.13839"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="1.8273822"
+       y="105.12887"
+       id="text41910-8-1-3-2-9"><tspan
+         id="tspan41908-2-5-6-8-1"
+         x="1.8273822"
+         y="105.12887"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="6.1196299"
+       y="105.16878"
+       id="text41910-8-1-3-2-9-6"><tspan
+         id="tspan41908-2-5-6-8-1-8"
+         x="6.1196299"
+         y="105.16878"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="10.108494"
+       y="105.14901"
+       id="text41910-8-1-3-2-9-6-7"><tspan
+         id="tspan41908-2-5-6-8-1-8-7"
+         x="10.108494"
+         y="105.14901"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="14.606332"
+       y="105.15103"
+       id="text41910-8-1-3-2-9-6-7-3"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1"
+         x="14.606332"
+         y="105.15103"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="18.615549"
+       y="105.11096"
+       id="text41910-8-1-3-2-9-6-7-3-3"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2"
+         x="18.615549"
+         y="105.11096"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="24.423244"
+       y="105.08839"
+       id="text41910-8-1-3-2-9-6-7-3-3-1"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1"
+         x="24.423244"
+         y="105.08839"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="29.025682"
+       y="105.09913"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0"
+         x="29.025682"
+         y="105.09913"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="33.250252"
+       y="105.09995"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9"
+         x="33.250252"
+         y="105.09995"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="37.363224"
+       y="105.11788"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0"
+         x="37.363224"
+         y="105.11788"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">D</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="41.481274"
+       y="105.09711"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7"
+         x="41.481274"
+         y="105.09711"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="46.171318"
+       y="105.11014"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4"
+         x="46.171318"
+         y="105.11014"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="50.110191"
+       y="105.11504"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2-9"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4-0"
+         x="50.110191"
+         y="105.11504"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">G</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="54.251369"
+       y="105.11217"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2-9-6"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4-0-1"
+         x="54.251369"
+         y="105.11217"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">H</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="58.930874"
+       y="105.08733"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2-9-6-6"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4-0-1-4"
+         x="58.930874"
+         y="105.08733"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">PATCH</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="65.077927"
+       y="105.09915"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2-9-6-6-4"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4-0-1-4-2"
+         x="65.077927"
+         y="105.09915"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">SHIFT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;line-height:1;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';letter-spacing:0px;word-spacing:0px;fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+       x="71.000244"
+       y="105.10321"
+       id="text41910-8-1-3-2-9-6-7-3-3-1-5-5-1-0-2-9-6-6-4-6"><tspan
+         id="tspan41908-2-5-6-8-1-8-7-1-2-1-0-9-0-7-4-0-1-4-2-0"
+         x="71.000244"
+         y="105.10321"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#ece8e5;fill-opacity:1;stroke-width:0.0733241"
+         sodipodi:role="line">WAVE</tspan></text>
+  </g>
+</svg>
