@@ -10,7 +10,7 @@ See [trondolsen.github.io/js-webpatcher/webpatcher.html](https://trondolsen.gith
 
 ## Usage
 
-Open http://trondolsen.github.io/js-webpatcher/webpatcher.html in web browser.
+Open webpatcher.html in web browser.
 
 Web browser requirements
  - Web MIDI API (https://webaudio.github.io/web-midi-api/)

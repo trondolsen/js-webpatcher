@@ -77,16 +77,21 @@ body {
  * Synth Frame
  */
 
-.synth-chassis-black {
-  background-image: url("chassis-black.svg");
+.synth-chassis {
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.synth-chassis-blue {
-  background-image: url("chassis-blue.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.synth-chassis.color-classic {
+  background-image: url("./svg-classic/chassis.svg");
+}
+
+.synth-chassis.color-black {
+  background-image: url("./svg-black/chassis.svg");
+}
+
+.synth-chassis.color-blue {
+  background-image: url("./svg-blue/chassis.svg");
 }
 
 .synth-chassis-frame {
@@ -252,6 +257,22 @@ body {
   position: absolute;
   top: 26.0vw;
   left: 16.54vw;
+  width: 76.4vw;
+  height: 14.26vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.color-classic .synth-keyboard-frame {
+  background-image: url("./svg-classic/section-keys.svg");
+}
+
+.color-black .synth-keyboard-frame {
+  background-image: url("./svg-black/section-keys.svg");
+}
+
+.color-blue .synth-keyboard-frame {
+  background-image: url("./svg-blue/section-keys.svg");
 }
 
 .synth-octave-1-frame {
@@ -814,124 +835,268 @@ body {
   position: relative;
   width: 11.4vw;
   height: 10.2vw;
-  background-image: url("section-lfo1.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-lfo {
+  background-image: url("./svg-classic/section-lfo1.svg");
+}
+
+.color-black .synth-section-lfo {
+  background-image: url("./svg-black/section-lfo1.svg");
+}
+
+.color-blue .synth-section-lfo {
+  background-image: url("./svg-blue/section-lfo1.svg");
 }
 
 .synth-section-ddsmodulator {
   position: relative;
   width: 20.0vw;
   height: 10.2vw;
-  background-image: url("section-ddsmodulator.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-ddsmodulator {
+  background-image: url("./svg-classic/section-ddsmodulator.svg");
+}
+
+.color-black .synth-section-ddsmodulator {
+  background-image: url("./svg-black/section-ddsmodulator.svg");
+}
+
+.color-blue .synth-section-ddsmodulator {
+  background-image: url("./svg-blue/section-ddsmodulator.svg");
 }
 
 .synth-section-oscillators {
   position: relative;
   width: 13.5vw;
   height: 10.2vw;
-  background-image: url("section-oscillators.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.color-classic .synth-section-oscillators {
+  background-image: url("./svg-classic/section-oscillators.svg");
+}
+
+.color-black .synth-section-oscillators {
+  background-image: url("./svg-black/section-oscillators.svg");
+}
+
+.color-blue .synth-section-oscillators {
+  background-image: url("./svg-blue/section-oscillators.svg");
+}
+
 
 .synth-section-mixer {
   position: relative;
   width: 4.05vw;
   height: 10.2vw;
-  background-image: url("section-mixer.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-mixer {
+  background-image: url("./svg-classic/section-mixer.svg");
+}
+
+.color-black .synth-section-mixer {
+  background-image: url("./svg-black/section-mixer.svg");
+}
+
+.color-blue .synth-section-mixer {
+  background-image: url("./svg-blue/section-mixer.svg");
 }
 
 .synth-section-vcf {
   position: relative;
   width: 16.4vw;
   height: 10.2vw;
-  background-image: url("section-vcf.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-vcf {
+  background-image: url("./svg-classic/section-vcf.svg");
+}
+
+.color-black .synth-section-vcf {
+  background-image: url("./svg-black/section-vcf.svg");
+}
+
+.color-blue .synth-section-vcf {
+  background-image: url("./svg-blue/section-vcf.svg");
 }
 
 .synth-section-vca {
   position: relative;
   width: 7.33vw;
   height: 10.2vw;
-  background-image: url("section-vca.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-vca {
+  background-image: url("./svg-classic/section-vca.svg");
+}
+
+.color-black .synth-section-vca {
+  background-image: url("./svg-black/section-vca.svg");
+}
+
+.color-blue .synth-section-vca {
+  background-image: url("./svg-blue/section-vca.svg");
 }
 
 .synth-section-envelopes {
   position: relative;
   width: 22.25vw;
   height: 10.2vw;
-  background-image: url("section-envelopes.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-envelopes {
+  background-image: url("./svg-classic/section-envelopes.svg");
+}
+
+.color-black .synth-section-envelopes {
+  background-image: url("./svg-black/section-envelopes.svg");
+}
+
+.color-blue .synth-section-envelopes {
+  background-image: url("./svg-blue/section-envelopes.svg");
 }
 
 .synth-section-performance {
   position: relative;
   width: 13.5vw;
   height: 21.84vw;
-  background-image: url("section-performance.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-performance {
+  background-image: url("./svg-classic/section-performance.svg");
+}
+
+.color-black .synth-section-performance {
+  background-image: url("./svg-black/section-performance.svg");
+}
+
+.color-blue .synth-section-performance {
+  background-image: url("./svg-blue/section-performance.svg");
 }
 
 .synth-section-voiceassign {
   position: relative;
   width: 6.5vw;
   height: 5.84vw;
-  background-image: url("section-voiceassign.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-voiceassign {
+  background-image: url("./svg-classic/section-voiceassign.svg");
+}
+
+.color-black .synth-section-voiceassign {
+  background-image: url("./svg-black/section-voiceassign.svg");
+}
+
+.color-blue .synth-section-voiceassign {
+  background-image: url("./svg-blue/section-voiceassign.svg");
 }
 
 .synth-section-arpeggiator {
   position: relative;
   width: 21.1vw;
   height: 5.84vw;
-  background-image: url("section-arpeggiator.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-arpeggiator {
+  background-image: url("./svg-classic/section-arpeggiator.svg");
+}
+
+.color-black .synth-section-arpeggiator {
+  background-image: url("./svg-black/section-arpeggiator.svg");
+}
+
+.color-blue .synth-section-arpeggiator {
+  background-image: url("./svg-blue/section-arpeggiator.svg");
 }
 
 .synth-section-patch {
   position: relative;
   width: 38.5vw;
   height: 5.84vw;
-  background-image: url("section-patch.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-patch {
+  background-image: url("./svg-classic/section-patch.svg");
+}
+
+.color-black .synth-section-patch {
+  background-image: url("./svg-black/section-patch.svg");
+}
+
+.color-blue .synth-section-patch {
+  background-image: url("./svg-blue/section-patch.svg");
 }
 
 .synth-section-delay {
   position: relative;
   width: 10.6vw;
   height: 5.84vw;
-  background-image: url("section-delay.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-delay {
+  background-image: url("./svg-classic/section-delay.svg");
+}
+
+.color-black .synth-section-delay {
+  background-image: url("./svg-black/section-delay.svg");
+}
+
+.color-blue .synth-section-delay {
+  background-image: url("./svg-blue/section-delay.svg");
 }
 
 .synth-section-chorus {
   position: relative;
   width: 6.2vw;
   height: 5.84vw;
-  background-image: url("section-chorus.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.color-classic .synth-section-chorus {
+  background-image: url("./svg-classic/section-chorus.svg");
+}
+
+.color-black .synth-section-chorus {
+  background-image: url("./svg-black/section-chorus.svg");
+}
+
+.color-blue .synth-section-chorus {
+  background-image: url("./svg-blue/section-chorus.svg");
 }
 
 .synth-fader {
   position: relative;
   width: 1.5vw;
   height: 0.88vw;
-  background-image: url("control-fader.svg");
+  background-image: url("./svg-shared/control-fader.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -944,7 +1109,7 @@ body {
   position: relative;
   width: 0.88vw;
   height: 1.5vw;
-  background-image: url("control-slider.svg");
+  background-image: url("./svg-shared/control-slider.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -957,7 +1122,7 @@ body {
   position: relative;
   width: 2vw;
   height: 2vw;
-  background-image: url("control-rotary.svg");
+  background-image: url("./svg-shared/control-rotary.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-78deg);
@@ -971,7 +1136,7 @@ body {
   position: relative;
   width: 2vw;
   height: 2vw;
-  background-image: url("control-continuousrotary.svg");
+  background-image: url("./svg-shared/control-continuousrotary.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-148deg);
@@ -985,7 +1150,7 @@ body {
   position: relative;
   width: 2vw;
   height: 2vw;
-  background-image: url("control-rotary.svg");
+  background-image: url("./svg-shared/control-rotary.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-148deg);
@@ -999,45 +1164,33 @@ body {
   position: absolute;
   width: 1.5vw;
   height: 2.2vw;
-  background-image: url("control-button-white.svg");
+  background-image: url("./svg-shared/control-button-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.synth-button-white {
-  background-image: url("control-button-white.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-white {
+  background-image: url("./svg-shared/control-button-white.svg");
 }
 
-.synth-button-yellow {
-  background-image: url("control-button-yellow.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-yellow {
+  background-image: url("./svg-shared/control-button-yellow.svg");
 }
 
-.synth-button-orange {
-  background-image: url("control-button-orange.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-orange {
+  background-image: url("./svg-shared/control-button-orange.svg");
 }
 
-.synth-button-green {
-  background-image: url("control-button-green.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-green {
+  background-image: url("./svg-shared/control-button-green.svg");
 }
 
-.synth-button-blue {
-  background-image: url("control-button-blue.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-blue {
+  background-image: url("./svg-shared/control-button-blue.svg");
 }
 
-.synth-button-red {
-  background-image: url("control-button-red.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.color-classic .synth-button-red {
+  background-image: url("./svg-shared/control-button-red.svg");
 }
 
 .synth-button:hover {
@@ -1048,7 +1201,7 @@ body {
   position: absolute;
   width: 1.5vw;
   height: 2.2vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1060,7 +1213,7 @@ body {
   left: 1.4vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1072,7 +1225,7 @@ body {
   left: 1.4vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1084,7 +1237,7 @@ body {
   left: 1.4vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1096,7 +1249,7 @@ body {
   left: 1.4vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1108,7 +1261,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1120,7 +1273,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1132,7 +1285,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1144,7 +1297,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1156,7 +1309,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1168,7 +1321,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1180,7 +1333,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1192,7 +1345,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1204,7 +1357,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1216,7 +1369,7 @@ body {
   left: 1.35vw;
   width: 1.5vw;
   height: 1.8vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1226,7 +1379,7 @@ body {
   position: absolute;
   width: 1.6vw;
   height: 2.2vw;
-  background-image: url("control-button-off.svg");
+  background-image: url("./svg-shared/control-button-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1236,7 +1389,7 @@ body {
   position: relative;
   width: 0.8vw;
   height: 1.92vw;
-  background-image: url("control-switch-1.svg");
+  background-image: url("./svg-shared/control-switch-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1249,7 +1402,7 @@ body {
   position: relative;
   width: 0.8vw;
   height: 1.92vw;
-  background-image: url("control-switch-2.svg");
+  background-image: url("./svg-shared/control-switch-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1262,7 +1415,7 @@ body {
   position: relative;
   width: 0.8vw;
   height: 1.92vw;
-  background-image: url("control-switch-3.svg");
+  background-image: url("./svg-shared/control-switch-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1275,7 +1428,7 @@ body {
   position: relative;
   width: 1.92vw;
   height: 0.8vw;
-  background-image: url("control-flipswitch-1.svg");
+  background-image: url("./svg-shared/control-flipswitch-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1288,7 +1441,7 @@ body {
   position: relative;
   width: 1.92vw;
   height: 0.8vw;
-  background-image: url("control-flipswitch-2.svg");
+  background-image: url("./svg-shared/control-flipswitch-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1301,7 +1454,7 @@ body {
   position: relative;
   width: 1.92vw;
   height: 0.8vw;
-  background-image: url("control-flipswitch-3.svg");
+  background-image: url("./svg-shared/control-flipswitch-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1310,7 +1463,7 @@ body {
   position: absolute;
   width: 5.0vw;
   height: 0.7vw;
-  background-image: url("control-pitch-push.svg");
+  background-image: url("./svg-shared/control-pitch-push.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1321,7 +1474,7 @@ body {
   position: absolute;
   width: 2.5vw;
   height: 0.8vw;
-  background-image: url("control-pitch-down.svg");
+  background-image: url("./svg-shared/control-pitch-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1332,7 +1485,7 @@ body {
   position: absolute;
   width: 2.5vw;
   height: 0.8vw;
-  background-image: url("control-pitch-up.svg");
+  background-image: url("./svg-shared/control-pitch-up.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -1791,7 +1944,7 @@ body {
 .synth-key-1 {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-1.svg");
+  background-image: url("./svg-shared/control-key-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1799,7 +1952,7 @@ body {
 .synth-key-1.down {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-1-down.svg");
+  background-image: url("./svg-shared/control-key-1-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1808,7 +1961,7 @@ body {
   z-index: 11;
   width: 1.22vw;
   height: 16.3vw;
-  background-image: url("control-key-2.svg");
+  background-image: url("./svg-shared/control-key-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1817,7 +1970,7 @@ body {
   z-index: 11;
   width: 1.22vw;
   height: 16.3vw;
-  background-image: url("control-key-2-down.svg");
+  background-image: url("./svg-shared/control-key-2-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1825,7 +1978,7 @@ body {
 .synth-key-3 {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-3.svg");
+  background-image: url("./svg-shared/control-key-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1833,7 +1986,7 @@ body {
 .synth-key-3.down {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-3-down.svg");
+  background-image: url("./svg-shared/control-key-3-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1841,7 +1994,7 @@ body {
 .synth-key-4 {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-4.svg");
+  background-image: url("./svg-shared/control-key-4.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1849,7 +2002,7 @@ body {
 .synth-key-4.down {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-4-down.svg");
+  background-image: url("./svg-shared/control-key-4-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1857,7 +2010,7 @@ body {
 .synth-key-5 {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-5.svg");
+  background-image: url("./svg-shared/control-key-5.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1865,7 +2018,7 @@ body {
 .synth-key-5.down {
   width: 2.7vw;
   height: 16.3vw;
-  background-image: url("control-key-5-down.svg");
+  background-image: url("./svg-shared/control-key-5-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

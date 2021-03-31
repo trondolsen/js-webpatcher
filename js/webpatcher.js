@@ -10,6 +10,9 @@
   const config = {
     title: 'Applications',
     color: 'blue',
+    mouse: {
+      sensitivity: 100.0
+    },
     midi: {}
   };
 
@@ -18,9 +21,9 @@
     var searchParams = new URLSearchParams(browser.window.location.search);
     if (searchParams.has('color')) {
       var colorParam = searchParams.get('color').toLowerCase();
-      if (colorParam === 'blue' || colorParam === 'black') {
+      if (colorParam === 'blue' || colorParam === 'black' ||  colorParam === 'classic') {
         config.color = colorParam;
-        query('.synth-synth-frame').css({add:[`synth-synth-${config.color}`], remove:['synth-synth-black','synth-synth-blue']});
+        query('.synth-chassis').css({add:[`color-${config.color}`], remove:['color-classic','color-black','color-blue']});
         browser.console.info(`Set config.color to ${config.color}`);
       }
       else {
@@ -183,8 +186,8 @@
         mouseTracking.dy = event.clientY - mouseTracking.y;
         mouseTracking.x = event.clientX;
         mouseTracking.y = event.clientY;
-        mouseTracking.dxInVw = (100.0 * mouseTracking.dx) / window.innerWidth;
-        mouseTracking.dyInVw = (100.0 * mouseTracking.dy) / window.innerWidth;
+        mouseTracking.dxInVw = (config.mouse.sensitivity * mouseTracking.dx) / window.innerHeight;
+        mouseTracking.dyInVw = (config.mouse.sensitivity * mouseTracking.dy) / window.innerWidth;
         synthControl.updateValue(mouseTracking.dxInVw, mouseTracking.dyInVw);
       };
       var fn = (event) => {
@@ -1099,11 +1102,11 @@
     updateValue() {
       if (this.state === 0) {
         this.state = 1;
-        this.lightElem.attr('backgroundImage', () => { return 'url(./css/control-button-on.svg)' })
+        this.lightElem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-button-on.svg)' })
       }
       else {
         this.state = 0;
-        this.lightElem.attr('backgroundImage', () => { return 'url(./css/control-button-off.svg)' })
+        this.lightElem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-button-off.svg)' })
       }
 
       if (this.midiOut !== undefined) {
@@ -1140,20 +1143,20 @@
       if (this.state === 0) {
         this.state = 1;
         this.nextState = 2;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-switch-2.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-switch-2.svg)' });
       }
       else if (this.state === 1 && this.nextState === 2) {
         this.state = 2;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-switch-3.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-switch-3.svg)' });
       }
       else if (this.state === 1 && this.nextState === 0) {
         this.state = 0;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-switch-1.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-switch-1.svg)' });
       }
       else if (this.state === 2) {
         this.state = 1;
         this.nextState = 0;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-switch-2.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-switch-2.svg)' });
       }
 
       if (this.midiOut !== undefined) {
@@ -1187,15 +1190,15 @@
     updateValue() {
       if (this.state === 0) {
         this.state = 1;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-flipswitch-2.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-flipswitch-2.svg)' });
       }
       else if (this.state === 1) {
         this.state = 2;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-flipswitch-3.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-flipswitch-3.svg)' });
       }
       else {
         this.state = 0;
-        this.elem.attr('backgroundImage', () => { return 'url(./css/control-flipswitch-1.svg)' });
+        this.elem.attr('backgroundImage', () => { return 'url(./css/svg-shared/control-flipswitch-1.svg)' });
       }
     }
   }
