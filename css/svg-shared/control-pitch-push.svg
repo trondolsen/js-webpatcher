@@ -42,20 +42,16 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(-51.986118,-145.8071)">
-    <rect
-       style="fill:url(#linearGradient2229);fill-opacity:1;stroke:none;stroke-width:0.092;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+    <path
        id="rect1538-61"
-       width="13.956333"
-       height="1.6953343"
-       x="51.986118"
-       y="145.8071"
-       ry="0.12768203" />
+       style="fill:url(#linearGradient2229);fill-opacity:1;stroke:none;stroke-width:0.092;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+       d="m 52.1138,145.8071 h 13.700969 c 0.07074,0 0.127682,0.0569 0.127682,0.12768 v 1.43997 c 0,0.0707 -0.05695,0.12768 -0.127682,0.12768 H 52.1138 c -0.07073,0 -0.127682,-0.0569 -0.127682,-0.12768 v -1.43997 c 0,-0.0707 0.05695,-0.12768 0.127682,-0.12768 z" />
   </g>
 </svg>

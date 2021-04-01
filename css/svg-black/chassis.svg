@@ -20,19 +20,16 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(100.29005,-60.07708)">
-    <rect
-       style="fill:#606162;fill-opacity:1;stroke:#000000;stroke-width:0.055;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+    <path
        id="rect30679"
-       width="276.12033"
-       height="111.11227"
-       x="-100.26255"
-       y="60.10458" />
+       style="fill:#606162;fill-opacity:1;stroke:#000000;stroke-width:0.055;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M -100.26255,60.10458 H 175.85778 V 171.21685 H -100.26255 Z" />
   </g>
 </svg>

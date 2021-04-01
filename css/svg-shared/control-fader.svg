@@ -20,21 +20,17 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(-39.999999,-117)">
-    <rect
-       style="fill:#ece8e5;fill-opacity:1;stroke:none;stroke-width:0.163877;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+    <path
        id="rect950"
-       width="6.999999"
-       height="4"
-       x="40"
-       y="117"
-       ry="0.33568665" />
+       style="fill:#ece8e5;fill-opacity:1;stroke:none;stroke-width:0.163877;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 40.335687,117 h 6.328625 c 0.185971,0 0.335687,0.14972 0.335687,0.33569 v 3.32862 c 0,0.18597 -0.149716,0.33569 -0.335687,0.33569 H 40.335687 C 40.149716,121 40,120.85028 40,120.66431 v -3.32862 C 40,117.14972 40.149716,117 40.335687,117 Z" />
     <path
        style="fill:none;stroke:#221d19;stroke-width:0.935414;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 39.999999,119 H 47"

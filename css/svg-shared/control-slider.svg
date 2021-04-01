@@ -20,22 +20,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(-41.5,-115.5)">
-    <rect
-       style="fill:#ece8e5;fill-opacity:1;stroke:none;stroke-width:0.163877;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+    <path
        id="rect950"
-       width="6.999999"
-       height="4"
-       x="115.5"
-       y="-45.5"
-       ry="0.33568665"
-       transform="rotate(90)" />
+       style="fill:#ece8e5;fill-opacity:1;stroke:none;stroke-width:0.163877;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       transform="rotate(90)"
+       d="m 115.83569,-45.5 h 6.32862 c 0.18597,0 0.33569,0.149716 0.33569,0.335687 v 3.328626 c 0,0.185971 -0.14972,0.335687 -0.33569,0.335687 h -6.32862 c -0.18597,0 -0.33569,-0.149716 -0.33569,-0.335687 v -3.328626 c 0,-0.185971 0.14972,-0.335687 0.33569,-0.335687 z" />
     <path
        style="fill:none;stroke:#221d19;stroke-width:0.935414;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 43.5,115.5 v 7"

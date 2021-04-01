@@ -62,38 +62,26 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(-89.892548,-136.89255)">
-    <rect
-       style="fill:#ece8e5;stroke:#666463;stroke-width:0.214905;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+    <path
        id="rect1140"
-       width="3.999999"
-       height="5.9999967"
-       x="90"
-       y="137"
-       ry="0.20079985" />
-    <rect
-       style="fill:url(#linearGradient1743);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ece8e5;stroke:#666463;stroke-width:0.214905;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 90.2008,137 h 3.598399 c 0.111243,0 0.2008,0.0896 0.2008,0.2008 v 5.5984 c 0,0.11124 -0.08956,0.2008 -0.2008,0.2008 H 90.2008 C 90.089557,143 90,142.91044 90,142.7992 v -5.5984 C 90,137.08956 90.089557,137 90.2008,137 Z" />
+    <path
        id="rect1735"
-       width="4"
-       height="1"
-       x="90"
-       y="138.84691"
-       ry="0" />
-    <rect
-       style="fill:url(#linearGradient1772);fill-opacity:1;stroke:none;stroke-width:0.122244;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:url(#linearGradient1743);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 90,138.84691 h 4 v 1 h -4 z" />
+    <path
        id="rect1735-2"
-       width="4"
-       height="0.37358704"
-       x="-93.999176"
-       y="-138.84979"
-       ry="0"
-       transform="scale(-1)" />
+       style="fill:url(#linearGradient1772);fill-opacity:1;stroke:none;stroke-width:0.122244;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+       transform="scale(-1)"
+       d="m -93.999176,-138.84979 h 4 v 0.37358 h -4 z" />
     <path
        style="fill:none;stroke:#fffbf7;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 89.999999,138.83698 h 4"

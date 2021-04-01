@@ -12,6 +12,11 @@ See [trondolsen.github.io/js-webpatcher/webpatcher.html](https://trondolsen.gith
 
 Open webpatcher.html in web browser.
 
+Add the following URL parameters to change config:
+ - webpatcher.html?color=black
+ - webpatcher.html?color=blue
+ - webpatcher.html?color=classic
+
 Web browser requirements
  - Web MIDI API (https://webaudio.github.io/web-midi-api/)
  - ECMAScript 2017 (http://www.ecma-international.org/ecma-262/8.0/index.html)

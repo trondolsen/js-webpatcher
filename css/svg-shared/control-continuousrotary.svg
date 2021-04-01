@@ -20,20 +20,17 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      transform="translate(-74.507778,-124.50776)">
-    <ellipse
-       style="fill:#ece8e5;stroke:#0a0103;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+    <path
        id="path3808"
-       cx="100"
-       cy="149.90958"
-       rx="24.992222"
-       ry="24.901819" />
+       style="fill:#ece8e5;stroke:#0a0103;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 124.99222,149.90958 A 24.992222,24.901819 0 0 1 100,174.8114 24.992222,24.901819 0 0 1 75.007778,149.90958 24.992222,24.901819 0 0 1 100,125.00776 a 24.992222,24.901819 0 0 1 24.99222,24.90182 z" />
     <circle
        style="fill:#ece8e5;stroke:#0a0103;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path12413"
@@ -41,12 +38,9 @@
        cy="150"
        rx="18.999998"
        ry="18.000002" />
-    <ellipse
-       style="fill:#ece8e5;stroke:#0a0103;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+    <path
        id="path3808-3"
-       ry="18.255737"
-       rx="19.009497"
-       cy="150.01953"
-       cx="100.0095" />
+       style="fill:#ece8e5;stroke:#0a0103;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 119.019,150.01953 A 19.009497,18.255737 0 0 1 100.0095,168.27527 19.009497,18.255737 0 0 1 81.000002,150.01953 19.009497,18.255737 0 0 1 100.0095,131.76379 19.009497,18.255737 0 0 1 119.019,150.01953 Z" />
   </g>
 </svg>
