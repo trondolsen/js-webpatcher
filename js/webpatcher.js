@@ -186,8 +186,8 @@
         mouseTracking.dy = event.clientY - mouseTracking.y;
         mouseTracking.x = event.clientX;
         mouseTracking.y = event.clientY;
-        mouseTracking.dxInVw = (config.mouse.sensitivity * mouseTracking.dx) / window.innerHeight;
-        mouseTracking.dyInVw = (config.mouse.sensitivity * mouseTracking.dy) / window.innerWidth;
+        mouseTracking.dxInVw = (config.mouse.sensitivity * mouseTracking.dx) / window.innerWidth;
+        mouseTracking.dyInVw = (config.mouse.sensitivity * mouseTracking.dy) / window.innerHeight;
         synthControl.updateValue(mouseTracking.dxInVw, mouseTracking.dyInVw);
       };
       var fn = (event) => {
@@ -393,32 +393,33 @@
     var onMidiMessage = (event) => {
       var ccChannelMsg = Midi.ccChannelMessage[event.data[0]];
       var channel = event.data[0] & 0xf;
-      if (ccChannelMsg !== undefined) {
-        switch(ccChannelMsg[0]) {
-          case 128:
-            synth.keyboard.noteOff(event.data[1]);
-            break;
-          case 144:
-            synth.keyboard.noteOn(event.data[1], event.data[2]);
-            break;
-            case 176:
-              switch(event.data[1]) {
-                case 1:
-                  synth.prefPitchbend.push(event.data[2]);
-                  break;
-              }
-            break;
-          case 224:
-              var word = (event.data[2] << 7) | (event.data[1] & 0xf);
-              synth.prefPitchbend.bend(word);
-            break;
-        }
 
-        query('.midi-events').text(`${Midi.toText(event.data)}`);
-      }
-      else {
+      if (ccChannelMsg === undefined) {
         browser.console.info(`Unsupported midi ${event.data[0]} data=${event.data}`);
+        return;
       }
+
+      switch(ccChannelMsg[0]) {
+        case 128:
+          synth.keyboard.noteOff(event.data[1]);
+          break;
+        case 144:
+          synth.keyboard.noteOn(event.data[1], event.data[2]);
+          break;
+        case 176:
+          switch(event.data[1]) {
+            case 1:
+              synth.prefPitchbend.push(event.data[2]);
+              break;
+          }
+          break;
+        case 224:
+            var word = (event.data[2] << 7) | (event.data[1] & 0xf);
+            synth.prefPitchbend.bend(word);
+          break;
+      }
+
+      query('.midi-events').text(`${Midi.toText(event.data)}`);
     };
 
     window.addEventListener('load', function() {   
@@ -1219,12 +1220,16 @@
     }
 
     bend(velocity) {
-      var value = Math.abs(velocity - 8192) / 16383.0;
+      var value = Math.abs(velocity - 8192) / 8192.0;
       if (velocity < 8192) {
         this.elemPitchDown.attr('opacity', () => { return `${value}` });
       }
-      else {
+      else if (velocity > 8192) {
         this.elemPitchUp.attr('opacity', () => { return `${value}` });
+      }
+      else {
+        this.elemPitchUp.attr('opacity', () => { return `0.0` });
+        this.elemPitchDown.attr('opacity', () => { return `0.0` });
       }
     }
 
