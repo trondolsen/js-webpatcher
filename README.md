@@ -57,7 +57,7 @@ SOFTWARE.
 
 This software was built using these additional libraries.
 
-### Bootstrap 5.0.0-beta2
+### Bootstrap 5.0.0-beta3
 
 https://getbootstrap.com/
 https://github.com/twbs/bootstrap
@@ -85,7 +85,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-### Popper Core
+### Popper Core 2.9.2
 
 https://popper.js.org/
 https://github.com/popperjs/popper-core
@@ -111,7 +111,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Bootstrap Icons
+### Bootstrap Icons 1.4.1
 
 https://icons.getbootstrap.com/
 https://github.com/twbs/icons
