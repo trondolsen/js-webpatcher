@@ -57,7 +57,7 @@ SOFTWARE.
 
 This software was built using these additional libraries.
 
-### Bootstrap 5.0.0-beta3
+### Bootstrap 5.0.0
 
 https://getbootstrap.com/
 https://github.com/twbs/bootstrap
