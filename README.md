@@ -57,7 +57,7 @@ SOFTWARE.
 
 This software was built using these additional libraries.
 
-### Bootstrap 5.0.0
+### Bootstrap 5.0.1
 
 https://getbootstrap.com/
 https://github.com/twbs/bootstrap
@@ -111,7 +111,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Bootstrap Icons 1.4.1
+### Bootstrap Icons 1.5.0
 
 https://icons.getbootstrap.com/
 https://github.com/twbs/icons
